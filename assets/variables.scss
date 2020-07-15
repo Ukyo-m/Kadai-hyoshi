@@ -1,0 +1,570 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+.v-application p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    position: relative;
+    width: 143mm;
+    height: 205mm;
+    border: 1.5mm solid #000;
+
+    .wrap2 {
+        position: absolute;
+        height: calc(100% - 2mm);
+        width: calc(100% - 2mm);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        border: 0.25mm solid #000;
+        padding: 10mm 5mm 0;
+    }
+}
+
+.table-block {
+    display: flex;
+
+    &--title {
+        margin-right: 10px;
+        letter-spacing: normal;
+        font-kerning: normal;
+    }
+
+    &--table {
+        table {
+            border-collapse: collapse;
+
+            td {
+                border: 1px solid #000;
+                width: 8mm;
+                height: 8mm;
+                vertical-align: middle;
+                text-align: center;
+                font-size: 5mm;
+            }
+        }
+    }
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 10mm;
+    letter-spacing: 5mm;
+}
+
+.kadai-row {
+    display: flex;
+    margin-bottom: 4mm;
+
+    .subject {
+        display: flex;
+        align-items: center;
+        margin-right: 4mm;
+
+        &--title {
+            margin-right: 4mm;
+            font-size: 3mm;
+        }
+    }
+
+    .kadai-num {
+        display: flex;
+        align-items: center;
+        font-size: 3mm;
+
+        &__title {
+            margin-right: 4mm;
+        }
+    }
+}
+
+.kadai-title-row {
+    margin-bottom: 4mm;
+
+    .title-block {
+        display: flex;
+
+        &--title {
+            display: flex;
+            align-items: center;
+            margin-right: 4mm;
+            font-size: 3mm;
+        }
+
+        &--desc {
+            width: 85%;
+            height: 10mm;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            padding: 1mm;
+        }
+    }
+}
+
+.date-row {
+    margin-bottom: 4mm;
+
+    .date-block {
+        display: flex;
+
+        &--title {
+            display: flex;
+            align-items: center;
+            margin-right: 4mm;
+            font-size: 3mm;
+
+            .right-width {
+                margin-right: 6mm;
+            }
+        }
+    }
+
+    .table-block {
+        &--table {
+            display: flex;
+
+            p {
+                display: flex;
+                align-items: center;
+                margin: 0 2mm 0;
+                font-size: 3mm;
+            }
+        }
+    }
+}
+
+.subject-teacher {
+    &-row {
+        margin-bottom: 11mm;
+    }
+
+    &-block {
+        display: flex;
+
+        .subject-teacher--title {
+            display: flex;
+            align-items: center;
+            margin-right: 4mm;
+            font-size: 3mm;
+        }
+    }
+
+    &--desc {
+        border: 1px solid #000;
+        height: 8mm;
+        width: 60mm;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 1mm;
+
+        &::before {
+            content: "先生";
+            pointer-events: none;
+            display: flex;
+            font-size: 3.5mm;
+            align-items: center;
+            position: absolute;
+            width: 35px;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.class-symbol {
+    &-row {
+        margin-bottom: 4mm;
+    }
+
+    &-block {
+        display: flex;
+
+        .class-symbol--title {
+            font-size: 3mm;
+            display: flex;
+            align-items: center;
+            margin-right: 5mm;
+            letter-spacing: -3px;
+
+            .select {
+                letter-spacing: normal;
+                margin-right: 4px;
+            }
+        }
+    }
+
+    &--desc {
+        display: flex;
+
+        table {
+            border-collapse: collapse;
+            margin-right: 4mm;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 4mm;
+                height: 1mm;
+                border-top: 1px solid #000;
+                right: -4mm;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                &::before {
+                    content: none;
+                }
+            }
+
+            td {
+                border: 1px solid #000;
+                width: 8mm;
+                height: 8mm;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &-num {
+        display: flex;
+
+        .class-symbol-num--title {
+            font-size: 3mm;
+            display: flex;
+            align-items: center;
+            margin: 0 4mm;
+        }
+
+        &--desc {
+            table {
+                border-collapse: collapse;
+
+                td {
+                    border: 1px solid #000;
+                    width: 8mm;
+                    height: 8mm;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+.select-class-symbol {
+    &-row {
+        margin-bottom: 4mm;
+    }
+
+    &-block {
+        display: flex;
+
+        .select-class-symbol--title {
+            font-size: 3mm;
+            display: flex;
+            margin-right: 5mm;
+            letter-spacing: -3px;
+
+            .select {
+                letter-spacing: normal;
+                margin-right: 6mm;
+            }
+        }
+    }
+
+    &--desc {
+        display: flex;
+
+        table {
+            border-collapse: collapse;
+            margin-right: 4mm;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 4mm;
+                height: 1mm;
+                border-top: 1px solid #000;
+                right: -4mm;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                &::before {
+                    content: none;
+                }
+            }
+
+            td {
+                border: 1px solid #000;
+                width: 8mm;
+                height: 8mm;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+    }
+
+    &-num {
+        display: flex;
+
+        .select-class-symbol-num--title {
+            font-size: 3mm;
+            display: flex;
+            align-items: center;
+            margin: 0 4mm;
+        }
+
+        &--desc {
+            table {
+                border-collapse: collapse;
+
+                td {
+                    border: 1px solid #000;
+                    width: 8mm;
+                    height: 8mm;
+                    vertical-align: middle;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.my {
+    &-row {
+        margin-bottom: 4mm;
+        display: flex;
+
+        .my-num {
+            display: flex;
+
+            &--title {
+                display: flex;
+                align-items: center;
+                font-size: 3mm;
+                margin-right: 4mm;
+            }
+
+            &--table {
+                margin-right: 8mm;
+
+                table {
+                    border-collapse: collapse;
+
+                    td {
+                        border: 1px solid #000;
+                        width: 8mm;
+                        height: 8mm;
+                        vertical-align: middle;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .my-name {
+            display: flex;
+
+            &--title {
+                display: flex;
+                align-items: center;
+                font-size: 3mm;
+                margin-right: 4mm;
+            }
+
+            &--box {
+                border: 1px solid #000;
+                height: 8mm;
+                width: 51mm;
+                vertical-align: middle;
+                padding: 1mm;
+            }
+        }
+    }
+}
+
+.homeroom-teacher {
+    &-row {
+        margin-bottom: 4mm;
+    }
+
+    &-block {
+        display: flex;
+
+        .homeroom-teacher--title {
+            display: flex;
+            align-items: center;
+            margin-right: 4mm;
+            font-size: 3mm;
+
+            span {
+                margin-right: 6mm;
+            }
+        }
+    }
+
+    &--desc {
+        border: 1px solid #000;
+        height: 8mm;
+        width: 60mm;
+        position: relative;
+        vertical-align: middle;
+        padding: 1mm;
+
+        &::before {
+            content: "先生";
+            pointer-events: none;
+            display: flex;
+            font-size: 3.5mm;
+            align-items: center;
+            position: absolute;
+            width: 35px;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.comment-row {
+
+    p {
+        margin-bottom: 1.5em;
+
+        span {
+            font-size: 3mm;
+            display: block;
+            height: 9mm;
+            width: 100%;
+            border-bottom: 1px solid #000;
+        }
+    }
+}
+
+.stamp-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2mm;
+
+    table {
+        border-collapse: collapse;
+
+        td {
+            border: 1px solid #000;
+            width: 20mm;
+            height: 20mm;
+
+            &.kouketu {
+                &::before {
+                    content: "公欠";
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3mm;
+                }
+            }
+
+            &.menjo {
+                &::before {
+                    content: "免除";
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3mm;
+                }
+            }
+
+            &.sai {
+                &::before {
+                    content: "再提出";
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3mm;
+                }
+            }
+
+            &.kigen {
+                padding: 2mm;
+                position: relative;
+
+                &::before {
+                    content: "再提出期限";
+                    margin-top: -2mm;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    font-size: 3mm;
+                }
+
+                &::after {
+                    content: "月　日";
+                    font-size: 3mm;
+                    position: absolute;
+                    bottom: 2mm;
+                    right: 2mm;
+                }
+            }
+
+            &.mi {
+                &::before {
+                    content: "未提出";
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3mm;
+                }
+            }
+
+            &.shonin {
+                &::before {
+                    content: "承認";
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3mm;
+                }
+            }
+        }
+    }
+}
+
+.hikae {
+    font-size: 2.5mm;
+    text-align: right;
+}
+
+.hal-img {
+    width: 30mm;
+    height: auto;
+    position: absolute;
+    margin: 0 auto auto;
+    top: 3mm;
+    right: 3mm;
+    pointer-events: none;
+    z-index: 100;
+}
